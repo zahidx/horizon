@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/41366d7e9a.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+    <title>horizon_views</title>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <div class="navbar">
+        <div class="max-width">
+            <div class="logo">
+                <a href="index.html"> 
+                    <i class="fa fa-camera"></i>
+                    <span>horizon_views</span> </a>
+            </div>
+            <ul class="menu">
+                <li> <a href="index.html">Home</a> </li>
+                <li> <a href="gallery.html">Gallery</a> </li>
+                <li> <a href="live.html">Live Streaming</a> </li>
+                <li> <a href="about.html">About</a> </li>
+                <li> <a href="contact.html">Contact</a> </li>
+            </ul>
+
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Home section -->
+    <section class="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text">
+                    <div class="text-1">Meet</div>
+                    <div class="text-2">Professional</div>
+                    <div class="text-3">Photography</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Featured Section -->
+<section class="featured">
+    <h2 class="title">Latest photos</h2>
+    <div class="container">
+                <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"> <img src="image1.jpg" alt=""> </div>
+            <div class="swiper-slide"> <img src="image2.jpg" alt=""> </div>
+            <div class="swiper-slide"> <img src="image3.jpg" alt=""> </div>
+            ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Nature section -->
+<section class="nature">
+    <h2 class="title">Nature photos</h2>
+    <div class="max-width">
+        <div class="card">
+            <img src="nature1.jpg" alt="">
+            <img src="nature2.jpg" alt="">
+            <img src="nature3.jpg" alt="">
+        </div>
+    </div>
+
+        <div class="max-width">
+        <div class="card">
+            <img src="nature4.jpg" alt="">
+            <img src="nature5.jpg" alt="">
+            <img src="nature6.jpg" alt="">
+     
+    </div>
+    </div>
+</section>
+
+<!-- dark wallpapers -->
+
+<section class="nature">
+    <h2 class="title">Dark wallpapers</h2>
+    <div class="max-width">
+        <div class="card">
+            <img src="dark1.jpg" alt="">
+            <img src="dark2.jpg" alt="">
+            <img src="dark3.jpg" alt="">
+        </div>
+    </div>
+
+        <div class="max-width">
+        <div class="card">
+            <img src="dark4.jpg" alt="">
+            <img src="dark5.jpg" alt="">
+            <img src="dark6.jpg" alt="">
+     
+    </div>
+    </div>
+</section>
+
+<!-- animal section -->
+<section class="nature">
+    <h2 class="title">Animal wallpapers</h2>
+    <div class="max-width">
+        <div class="card">
+            <img src="a1.jpg" alt="">
+            <img src="a2.jpg" alt="">
+            <img src="a3.jpg" alt="">
+        </div>
+    </div>
+
+        <div class="max-width">
+        <div class="card">
+            <img src="a4.jpg" alt="">
+            <img src="a5.jpg" alt="">
+            <img src="a6.jpg" alt="">
+     
+    </div>
+    </div>
+</section>
+
+
+<!-- service section -->
+<section class="services">
+    <h2 class="title">Our Professional Services</h2>
+    <div class="max-width">
+        <div class="card">
+            <div class="left">
+                <img src="nature15.jpg" alt="">
+            </div>
+            <div class="right">
+                <h3>Services</h3>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem excepturi explicabo aperiam omnis enim voluptates consequuntur, ad architecto aspernatur, similique accusantium nobis itaque quaerat deserunt laborum. Quo a laboriosam enim quam distinctio quod exercitationem commodi iure saepe harum animi dolorem qui provident, aperiam dolores? Inventore nihil exercitationem eum soluta rem!</p>
+               <a href="#">Book our service now &#8594;</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- footer section -->
+<footer>
+    <span>Designed by <a href="#">horizon_views</a>copyright<i class="fa fa-copyright"></i>2022. All rights reserved</span>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  loop: true,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+    </script>
+</body>
+</html>

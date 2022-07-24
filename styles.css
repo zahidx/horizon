@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Playfair+Display:ital,wght@0,400;0,500;0,900;1,500;1,600;1,800&family=Poppins:ital,wght@0,200;0,300;0,400;0,800;1,300;1,400;1,500;1,600&family=Ubuntu:ital,wght@0,300;0,700;1,400;1,500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+
+section {
+    padding: 100px 0;
+}
+
+/* Navigation section */
+.navbar {
+    position: fixed;
+    width: 100%;
+    font-family: 'ubuntu', sans-serif;
+    padding: 15px 0;
+    background-color: darkblue;
+    z-index: 999;
+}
+
+.navbar .sticky {
+    background: #111;
+    padding: 15px 0;
+
+}
+
+.navbar .menu li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 25px;
+    transition: all 0.3s ease;
+}
+
+
+.navbar .menu li a:hover {
+    color: green;
+    font-size: 20px;
+
+
+}
+
+.navbar .logo a:hover {
+    font-size: 45px;
+    color: green;
+}
+
+.navbar .logo i {
+    color: red;
+}
+
+.navbar .logo span {
+    color: #fff;
+    text-shadow: hotpink 3px 3px 3px;
+
+}
+
+.navbar .logo a {
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.navbar .menu li {
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.navbar .menu li:hover {
+    color: green;
+
+}
+
+.max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+
+.navbar .menu-btn .fas {
+    font-size: 30px;
+    color: #fff;
+}
+
+/* Home section */
+.home {
+    display: flex;
+    background: linear-gradient(rgba(0, 0, 256, 0.5), rgba(0, 0, 256, 0.5)), url(banner.png) no-repeat center;
+    height: 100vh;
+    min-height: 500px;
+    font-family: 'Pair Play', serif;
+    background-size: cover;
+}
+
+.home .home-content {
+    font-size: 50px;
+    padding-top: 380px;
+    color: white;
+    text-shadow: hotpink 3px 3px 3px;
+}
+
+.menu-btn {
+    display: none;
+}
+
+/* other pages */
+.home .max-width a {
+    text-align: center;
+    font-size: 40px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background: gray;
+    color: white;
+    margin-left: 360px;
+    transition: all 0.4s ease;
+
+}
+
+.home .max-width a:hover {
+    background: none;
+    border: 2px solid white;
+
+}
+
+section .portrait-2 .card {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+
+}
+
+section .portrait-2 .card img {
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 10px;
+
+}
+
+.portraits {
+    margin: 0 20px;
+}
+
+
+/* live streams */
+section .live .card {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+
+}
+
+section .live .card img {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 10px;
+
+}
+
+.portraits {
+    margin: 0 20px;
+}
+
+.live .title::after {
+
+    content: "liveStream";
+    position: absolute;
+    background: #333;
+    bottom: -12px;
+    left: 50%;
+    color: red;
+    padding: 5px;
+    background: white;
+    font-size: 20px;
+    transform: translateX(-50%);
+
+}
+
+section .live .card h3 {
+    font-size: 35px;
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+section .live .card p {
+    padding: 20px 0;
+    font-size: 18px;
+
+}
+
+section .live .card .btn a {
+    background: blue;
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: #fff;
+    transition: all 0.4s ease;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'ubuntu', sans-serif;
+}
+
+
+
+section .live .card .btn a:hover {
+    background: none;
+    border: 3px solid red;
+    color: red;
+}
+
+
+
+
+
+/* about styles */
+.about .max-width .card img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    margin-right: 35px;
+    border-radius: 10px;
+
+}
+
+
+.about .max-width .card .right h3 {
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+.about .max-width .card .right a {
+    font-size: 20px;
+    padding: 10px;
+    background-color: blue;
+    color: #fff;
+    border-radius: 30px;
+    transition: all 0.4s ease;
+
+}
+
+.about .max-width .card .right a:hover {
+    background: none;
+    border: 2px solid blue;
+    color: #111;
+
+}
+
+.about .max-width .card .right p {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+
+/* contact pages */
+.contact .title::after {
+
+    content: "contact us";
+    position: absolute;
+    background: #333;
+    bottom: -12px;
+    left: 50%;
+    color: red;
+    padding: 5px;
+    background: white;
+    font-size: 20px;
+    transform: translateX(-50%);
+
+}
+
+
+iframe {
+    border-radius: 10px;
+}
+
+.contact .max-width .card .left .address {
+    background: lightgray;
+    padding: 20px;
+    color: red;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    width: 400px;
+    align-items: center;
+
+
+}
+
+.contact .max-width .card .left .address h3 {
+
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.contact .max-width .card .left .address p {
+
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+}
+
+.contact .max-width form {
+    background-color: gray;
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.contact .max-width form input {
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    outline: none;
+    padding: 6px 15px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact .max-width form textarea {
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    outline: none;
+    padding: 6px 15px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* featured content style */
+section .title {
+    font-family: 'ubuntu', sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+
+section .title::before {
+
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 3px;
+    background: #333;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+section .title::after {
+
+    content: "featured";
+    position: absolute;
+    background: #333;
+    bottom: -12px;
+    left: 50%;
+    color: red;
+    padding: 5px;
+    background: white;
+    font-size: 20px;
+    transform: translateX(-50%);
+
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.swiper {
+    width: 65%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.swiper-slide img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+section .max-width .card {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+section .max-width .card img {
+    width: 420px;
+    height: 250px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 10px;
+
+}
+
+
+/* service section */
+.services .title::after {
+
+    content: "why us!";
+    position: absolute;
+    background: #333;
+    bottom: -12px;
+    left: 50%;
+    color: red;
+    padding: 5px;
+    background: white;
+    font-size: 20px;
+    transform: translateX(-50%);
+
+}
+
+.services .max-width .card {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.services .max-width .card img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    margin-right: 35px;
+    border-radius: 10px;
+
+}
+
+.services .max-width .card .right h3 {
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+.services .max-width .card .right a {
+    font-size: 20px;
+    padding: 10px;
+    background-color: blue;
+    color: #fff;
+    border-radius: 30px;
+    transition: all 0.4s ease;
+
+}
+
+.services .max-width .card .right a:hover {
+    background: none;
+    border: 2px solid blue;
+    color: #111;
+
+}
+
+.services .max-width .card .right p {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+
+/* footer  */
+footer {
+    background: #111;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+}
+
+footer a {
+    color: red;
+}
+
+
+
+
+
+
+
+
+/* responsive design*/
+@media (max-width: 700px) {
+    .menu-btn {
+        display: inline-block;
+    }
+
+    .max-width {
+        padding: 0 50px;
+    }
+
+    .navbar .menu {
+        position: fixed;
+        background: #111;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        text-align: center;
+        padding-top: 80px;
+
+        transition: all 0.4s ease;
+
+
+    }
+
+    .navbar .menu li {
+        display: block;
+
+    }
+
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 28px;
+    }
+
+    .menu-btn {
+        display: block;
+        z-index: 9999;
+    }
+
+    .navbar .menu.active {
+        left: 0;
+    }
+
+    .menu-btn i.active::before {
+        content: "\f00d";
+    }
+
+
+
+
+}
